@@ -1,12 +1,14 @@
 <div class="main-container">
   <div class="search-bar-container">
-    <p-floatLabel>
-      <input pInputText id="search" [(ngModel)]="value" placeholder="   Filter"/>
-    </p-floatLabel>
+    <input pInputText id="search" [(ngModel)]="value" (keydown)="onKeyDown(value)" placeholder="   Filter"/>
   </div>
 
   <div class="notes-list">
-    <app-note-card *ngFor="let note of notes" [title]="note.title" [body]="note.body"></app-note-card>
+    <app-note-card 
+    *ngFor="let note of tempNote; index as i"
+    [link]="i"
+    [title]="note.title" 
+    [body]="note.body"></app-note-card>
   </div>
 
   <button class="add-button" routerLink="new">+ Add</button>

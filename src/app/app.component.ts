@@ -11,7 +11,8 @@ import { TableModule } from 'primeng/table';
     RouterOutlet, 
     ButtonModule,
     FormsModule, 
-    TableModule],
+    TableModule,
+    ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
