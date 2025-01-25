@@ -1,0 +1,82 @@
+@import "../../../styles.scss";
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+
+  #first-field {
+    padding-top: 20px;
+  }
+
+  .field {
+    margin-top: 30px;
+    .label {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .text, .input {
+      border: none;
+      font-size: 20px;
+      color: #555;
+      background-color: #e5e3e3;
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 20px;
+
+      &:hover {
+        border: 2px solid $blue;
+      }
+    }
+
+    .input {
+      height: 3rem;
+    }
+
+    .text {
+      height: 12rem;
+    }
+
+    .button {
+      position: absolute;
+      padding: 15px;
+      font-weight: bolder;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+
+      &:hover {
+        border: 4px solid $purple;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      &:active {
+        border: 4px solid darken($purple, 6);
+      }
+    }
+
+    #btn-1 {
+      right: 90px;
+      background-color: $pink;
+    }
+
+    #btn-2 {
+      right: 0px;
+      background-color: $blue;
+    }
+  }
+}
+
+.input, textarea {
+
+  &.ng-invalid.ng-touched {
+    border: 2px solid red !important;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(red, 0.1);
+    }
+  }
+}
