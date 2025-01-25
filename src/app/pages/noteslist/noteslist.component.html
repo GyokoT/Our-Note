@@ -1,6 +1,6 @@
 <div class="main-container">
   <div class="search-bar-container">
-    <input pInputText id="search" [(ngModel)]="value" (keydown)="onKeyDown(value)" placeholder="   Filter"/>
+    <input pInputText id="search" [(ngModel)]="value" (keydown.enter)="onKeyDown(value)" placeholder="   Filter"/>
   </div>
 
   <div class="notes-list">
