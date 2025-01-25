@@ -21,9 +21,30 @@
 
 .notes-list {
   margin-top: 25px;
+  margin-bottom: 70px;
 }
 
 app-note-card {
   display: block;
   margin-bottom: 25px;
+}
+
+.add-button {
+  position: fixed;
+  bottom: 20px;
+  width: 500px;
+  border-radius: 0;
+  border: none;
+  background-color: $purple;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+
+  box-shadow: 0 0 15px 5px rgba($purple, 0.2);
+
+  &:hover {
+    background-color: darken($purple, 5);
+    cursor: pointer;
+  }
 }

@@ -8,8 +8,8 @@ import { AfterViewInit, Component, ElementRef, Input, OnInit, Renderer2, ViewChi
   styleUrl: './note-card.component.scss'
 })
 export class NoteCardComponent implements OnInit, AfterViewInit{
-  @Input() title!: string;
-  @Input() body!: string;
+  @Input() title: string;
+  @Input() body: string;
 
   @ViewChild('truncator') truncator!: ElementRef<HTMLElement>;
 
